@@ -1,3 +1,13 @@
 .grid-index{
 	display: grid;
+	grid-template-areas:
+	"header header header"
+	"main main main"
+	"footer footer footer";
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto auto auto;
 }
+
+header{grid-area: header;}
+main{grid-area: main;}
+footer{grid-area: footer;}
